@@ -14,3 +14,5 @@ export class Employee {
   @Column()
   age: number
 }
+
+export type CreateEmployee = Omit<Employee, 'id'>
