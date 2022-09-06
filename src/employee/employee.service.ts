@@ -19,12 +19,6 @@ export class EmployeeService {
 
   update(id: number, employeeUpdate: CreateEmployee) {
     this.employeeRepo.update({ id }, employeeUpdate)
-    // this.employeeRepo
-    //   .createQueryBuilder()
-    //   .update('employee')
-    //   .set(employeeUpdate)
-    //   .where('id = :id', { id: id })
-    //   .execute()
   }
 
   delete(id: number) {
